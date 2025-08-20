@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin Panel — Attempts (Last 1 Hour)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark">
+  <main class="wrap admin">
+    <section class="card admin-card">
+      <h1 class="title">Attempts (Last 1 Hour)</h1>
+      <div class="controls">
+        <button id="refresh" class="small-btn">Refresh</button>
+      </div>
+      <div class="table">
+        <div class="thead">
+          <div>Type</div>
+          <div>Email / Phone</div>
+          <div>Time</div>
+          <div>Age</div>
+        </div>
+        <div id="rows" class="tbody"></div>
+      </div>
+    </section>
+  </main>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
